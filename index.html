@@ -579,6 +579,7 @@ footer b{color:var(--gold-2)}
   var h=document.documentElement, hdr=document.getElementById('top');
   function setLang(l){h.lang=l;h.dir=l==='ar'?'rtl':'ltr';document.getElementById('lang').textContent=l==='ar'?'English':'العربية';try{localStorage.setItem('lang',l)}catch(e){}}
   try{var s=localStorage.getItem('lang');if(s)setLang(s)}catch(e){}
+  var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='ar')setLang(q);
   document.getElementById('lang').onclick=function(){setLang(h.lang==='ar'?'en':'ar')};
   window.addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)});
   var m=document.getElementById('menu');
