@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>الحرفة الراقية للمقاولات العامة | Al Hirfah Al Raqiah General Contracting</title>
-<meta name="description" content="شركة الحرفة الراقية للمقاولات العامة – خبرة أكثر من 12 عاماً في المشاريع الكبرى بالمملكة العربية السعودية: مترو الرياض، الدرعية، القدية، الأفنيوز مول وغيرها.">
+<meta name="description" content="شركة الحرفة الراقية للمقاولات العامة – خبرة أكثر من 12 عاماً في المشاريع الكبرى بالمملكة العربية السعودية: مترو الرياض، الدرعية، الأفنيوز مول، أرامكو وغيرها.">
 <link rel="icon" href="assets/logo.jpg">
 <meta property="og:title" content="الحرفة الراقية للمقاولات العامة">
 <meta property="og:image" content="https://herfahsa.com/assets/hero.jpg">
@@ -166,6 +166,18 @@ h2{font-size:clamp(28px,3.4vw,42px);line-height:1.25;color:var(--navy);margin:10
 .lc li b{color:var(--navy)} .lc li span{color:var(--muted);display:block;font-size:14px}
 .note{font-size:14px;color:var(--muted);margin-top:14px}
 
+.lcs{background:linear-gradient(180deg,var(--bg),#fff)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:-18px 0 36px}
+.chips span{background:var(--navy);color:var(--gold-2);padding:7px 16px;border-radius:30px;font-size:14px;font-weight:600;font-family:Montserrat}
+.lc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.lc-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;position:relative;overflow:hidden;transition:.3s}
+.lc-card::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--gold);transform:scaleX(0);transition:.4s}
+.lc-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(3,51,65,.12)}.lc-card:hover::after{transform:scaleX(1)}
+.lc-card h3{color:var(--navy);font-size:17px;margin-bottom:6px;line-height:1.35}
+.lc-card p{color:var(--muted);font-size:13.5px}
+.lc-card p[dir=ltr]{text-align:start}
+@media (max-width:1000px){.lc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.lc-grid{grid-template-columns:1fr}}
 /* capacity */
 .cap{background:var(--navy);color:#fff}
 .cap h2{color:#fff}.cap .head p{color:#b9cbd0}
@@ -241,6 +253,7 @@ footer b{color:var(--gold-2)}
       <a href="#about"><span data-ar>من نحن</span><span data-en>About</span></a>
       <a href="#services"><span data-ar>خدماتنا</span><span data-en>Services</span></a>
       <a href="#projects"><span data-ar>مشاريعنا</span><span data-en>Projects</span></a>
+      <a href="#smart"><span data-ar>الأنظمة الذكية</span><span data-en>Smart Systems</span></a>
       <a href="#capacity"><span data-ar>قدراتنا</span><span data-en>Capacity</span></a>
       <a href="#contact"><span data-ar>تواصل معنا</span><span data-en>Contact</span></a>
       <button class="lang" id="lang" type="button">English</button>
@@ -256,15 +269,15 @@ footer b{color:var(--gold-2)}
     <span class="eyebrow"><span data-ar>الاسم الذي يمكنك الوثوق به</span><span data-en>The name you can trust upon</span></span>
     <h1 data-ar>نبني المستقبل <em>بخبرة 12 عاماً</em> في كبرى مشاريع المملكة</h1>
     <h1 data-en>Building the future with <em>12+ years</em> of landmark experience in the Kingdom</h1>
-    <p data-ar>شركة الحرفة الراقية للمقاولات العامة — فريق شارك في تنفيذ مترو الرياض، والدرعية، والقدية، والأفنيوز مول، يقدّم اليوم خدماته باسمه المستقل وبنفس الجودة والالتزام.</p>
-    <p data-en>Al Hirfah Al Raqiah General Contracting — the team behind work on Riyadh Metro, Diriyah, Qiddiya and The Avenues Mall, now serving clients directly under its own independent name, with the same quality and commitment.</p>
+    <p data-ar>شركة الحرفة الراقية للمقاولات العامة — فريق شارك في تنفيذ مترو الرياض، والدرعية، والأفنيوز مول، ومعمل غاز أرامكو، يقدّم اليوم خدماته باسمه المستقل وبنفس الجودة والالتزام.</p>
+    <p data-en>Al Hirfah Al Raqiah General Contracting — the team behind work on Riyadh Metro, Diriyah, The Avenues Mall and Saudi Aramco, now serving clients directly under its own independent name, with the same quality and commitment.</p>
     <div class="btns">
       <a href="#projects" class="btn btn-gold"><span data-ar>استعرض مشاريعنا</span><span data-en>View our projects</span></a>
       <a href="#contact" class="btn btn-ghost"><span data-ar>اطلب عرض سعر</span><span data-en>Request a quote</span></a>
     </div>
     <div class="stats">
       <div class="stat"><b data-count="12" data-suf="+">0</b><span data-ar>سنة خبرة في المملكة</span><span data-en>Years in KSA</span></div>
-      <div class="stat"><b data-count="13">0</b><span data-ar>مشروعاً كبيراً منفذاً وجارياً</span><span data-en>Major projects</span></div>
+      <div class="stat"><b data-count="12">0</b><span data-ar>مشروعاً كبيراً منفذاً وجارياً</span><span data-en>Major projects</span></div>
       <div class="stat"><b data-count="160">0</b><span data-ar>موظف وعامل</span><span data-en>Staff &amp; workforce</span></div>
       <div class="stat"><b data-count="2005">0</b><span data-ar>بداية المسيرة</span><span data-en>Journey began</span></div>
     </div>
@@ -310,7 +323,7 @@ footer b{color:var(--gold-2)}
     <div class="tl">
       <div class="reveal"><b>2005</b><p data-ar>انطلاق الشركة في الهند وتنفيذ مشاريع مترو دلهي ومبانٍ متعددة الطوابق.</p><p data-en>Started in India, delivering Delhi Metro and multi-storey building projects.</p></div>
       <div class="reveal"><b>UAE</b><p data-ar>مشاريع في الإمارات عبر شركتنا الشقيقة زينيث: مترو دبي – إكسبو 2020 وريم مول.</p><p data-en>UAE projects through our sister company Zenith: Dubai Metro – Expo 2020 and Reem Mall.</p></div>
-      <div class="reveal"><b>2015</b><p data-ar>دخول المملكة العربية السعودية والمشاركة في مترو الرياض ومشاريع الدرعية والقدية.</p><p data-en>Entered Saudi Arabia, contributing to Riyadh Metro, Diriyah and Qiddiya.</p></div>
+      <div class="reveal"><b>2015</b><p data-ar>دخول المملكة العربية السعودية والمشاركة في مترو الرياض ومشاريع الدرعية وأرامكو.</p><p data-en>Entered Saudi Arabia, contributing to Riyadh Metro, Diriyah and Saudi Aramco.</p></div>
       <div class="reveal"><b>2026</b><p data-ar>الانطلاق بهويتنا المستقلة: الحرفة الراقية للمقاولات العامة.</p><p data-en>Launched under our own identity: Al Hirfah Al Raqiah General Contracting.</p></div>
     </div>
   </div>
@@ -395,11 +408,6 @@ footer b{color:var(--gold-2)}
       <button data-f="ongoing"><span data-ar>جارية</span><span data-en>Ongoing</span></button>
     </div>
     <div class="pj-grid" id="pjgrid">
-      <article class="pj reveal" data-s="ongoing"><div class="ph"><img src="assets/stadium.jpg" alt=""><span class="tag on" data-ar>جاري</span><span class="tag on" data-en>Ongoing</span></div><div class="bd">
-        <h3 data-ar>استاد الأمير محمد بن سلمان</h3><h3 data-en>Prince Mohammed Bin Salman Stadium</h3>
-        <div class="loc" data-ar>القدية، الرياض</div><div class="loc" data-en>Qiddiya, Riyadh</div>
-        <p data-ar>الأعمال الإنشائية للاستاد ومواقف السيارات لصالح شركة القدية للاستثمار.</p><p data-en>Stadium structural works and car park for Qiddiya Investment Company.</p>
-        <div class="meta"><span>⏱ 18 <span data-ar>شهراً</span><span data-en>months</span></span></div></div></article>
 
       <article class="pj reveal" data-s="ongoing"><div class="ph"><img src="assets/infra.jpg" alt=""><span class="tag on" data-ar>جاري</span><span class="tag on" data-en>Ongoing</span></div><div class="bd">
         <h3 data-ar>حزمة البنية التحتية – الدرعية 2</h3><h3 data-en>Diriyah Infra Package – Diriyah II</h3>
@@ -459,26 +467,33 @@ footer b{color:var(--gold-2)}
   </div>
 </section>
 
-<!-- LOW CURRENT -->
-<section>
-  <div class="wrap lc">
-    <div class="reveal">
-      <div class="kicker"><span data-ar>التيار الخفيف والحريق</span><span data-en>Low current &amp; fire</span></div>
-      <h2 data-ar>أنظمة ذكية وآمنة لمنشآتك</h2>
-      <h2 data-en>Smart, secure systems for your facilities</h2>
-      <p style="color:var(--muted)" data-ar>من تنسيق التصميم ومجاري الكابلات، إلى السحب والتوصيل وتركيب الأجهزة وتوثيق التسليم: كابلات نحاسية وألياف، هاتف IP، مراكز بيانات، أنظمة صوت، كاميرات مراقبة، أتمتة KNX، بصمة وحضور، بوابات دوارة، شبكات Wi‑Fi، وأنظمة إنذار ومكافحة الحريق.</p>
-      <p style="color:var(--muted)" data-en>From design coordination and containment to cabling, termination, device installation and handover: copper &amp; fibre, IP telephony, data centres, sound systems, CCTV, KNX automation, time attendance, turnstiles, Wi‑Fi networks, and fire alarm &amp; fighting systems.</p>
-      <p class="note" data-ar>نُفّذت عبر شركتنا الشقيقة: بناء للحلول الذكية.</p>
-      <p class="note" data-en>Executed by our sister company, Bna Smart Solutions.</p>
+<!-- LOW CURRENT & SMART HOME -->
+<section class="lcs" id="smart">
+  <div class="wrap">
+    <div class="head reveal">
+      <div class="kicker"><span data-ar>التيار الخفيف والمنازل الذكية</span><span data-en>Low current &amp; smart home</span></div>
+      <h2 data-ar>أنظمة ذكية وآمنة لمنشآتك ومنزلك</h2>
+      <h2 data-en>Smart, secure systems for facilities and homes</h2>
+      <p data-ar>من التصميم ومجاري الكابلات إلى التركيب والبرمجة والتسليم: كاميرات المراقبة، الشبكات والواي فاي، مراكز البيانات، التحكم بالدخول والبوابات، الإنتركم، الأقفال الذكية، أنظمة الصوت، وأتمتة المنازل الذكية (KNX وTuya) للتكييف والإضاءة والستائر.</p>
+      <p data-en>From design and containment to installation, programming and handover: CCTV, networks &amp; Wi‑Fi, data centres, access control &amp; barriers, intercoms, smart locks, sound systems, and smart‑home automation (KNX &amp; Tuya) for A/C, lighting and curtains.</p>
     </div>
-    <ul class="reveal">
-      <li><b>Lulu Hypermarket</b><span data-ar>الرياض وحائل – إنذار ومكافحة الحريق</span><span data-en>Riyadh &amp; Hail – Fire fighting &amp; fire alarm</span></li>
-      <li><b>Virgin Megastore</b><span>CCTV, Wi‑Fi, Data, Data Centre</span></li>
-      <li><b>Fit Forever Gym</b><span>CCTV, Data, Wi‑Fi, Swing Barrier, Sound, KNX</span></li>
-      <li><b data-ar>حديقة الأمير مشعل</b><b data-en>Prince Mishaal Garden</b><span>Wi‑Fi, Sound, Phone, KNX</span></li>
-      <li><b>Alsaif Gallery</b><span>CCTV, Wi‑Fi, Data, Data Centre</span></li>
-      <li><b data-ar>السعودية للسيراميك – مستودع أبها</b><b data-en>Saudi Ceramic – Abha Warehouse</b><span>CCTV</span></li>
-    </ul>
+    <div class="chips reveal">
+      <span>CCTV</span><span>Wi‑Fi &amp; Data</span><span>Data Centre</span><span>Access Control</span><span>Barriers &amp; Bollards</span><span>KNX</span><span>Tuya Smart</span><span>Intercom</span><span>Smart Locks</span><span>Sound &amp; PA</span><span>Fire Alarm</span>
+    </div>
+    <div class="lc-grid">
+      <div class="lc-card reveal"><h3 data-ar>نيوم – مركز الابتكار</h3><h3 data-en>NEOM – Innovation Hub</h3><p dir="ltr">CCTV, Data, Wi‑Fi, Arm &amp; Swing Barriers, Automatic Rising Bollards, Data Centre</p></div>
+      <div class="lc-card reveal"><h3 data-ar>لولو هايبرماركت</h3><h3 data-en>Lulu Hypermarket</h3><p data-ar>الرياض وحائل – إنذار ومكافحة الحريق</p><p data-en>Riyadh &amp; Hail – Fire Alarm &amp; Fire Fighting</p></div>
+      <div class="lc-card reveal"><h3 data-ar>فيرجن ميجاستور</h3><h3 data-en>Virgin Megastore</h3><p dir="ltr">CCTV, Wi‑Fi, Data, Data Centre</p></div>
+      <div class="lc-card reveal"><h3 data-ar>العمري للأثاث المكتبي</h3><h3 data-en>Alomary Office Furniture</h3><p data-ar>جميع الفروع والمستودعات – CCTV</p><p data-en>All branches &amp; warehouses – CCTV</p></div>
+      <div class="lc-card reveal"><h3 data-ar>الأمير مشعل – الدرعية</h3><h3 data-en>Prince Mishaal – Diriyah</h3><p dir="ltr">KNX Smart Control (A/C, Curtains, Lighting), IP Phone, Invisible Speakers</p></div>
+      <div class="lc-card reveal"><h3 data-ar>مجموعة الموسى</h3><h3 data-en>Almusa Group</h3><p dir="ltr">CCTV, Data, Wi‑Fi, Access Control</p></div>
+      <div class="lc-card reveal"><h3 data-ar>فت فوريفر جيم</h3><h3 data-en>Fit Forever Gym</h3><p dir="ltr">CCTV, Data, Wi‑Fi, Swing Barrier, Data Centre, Sound, KNX</p></div>
+      <div class="lc-card reveal"><h3 data-ar>السيف غاليري</h3><h3 data-en>Alsaif Gallery</h3><p dir="ltr">CCTV, Wi‑Fi, Data, Data Centre</p></div>
+      <div class="lc-card reveal"><h3 data-ar>مطعم مريز</h3><h3 data-en>Mareez Restaurant</h3><p dir="ltr">CCTV, Data, Wi‑Fi, Phone, Fingerprint, Sound, Data Centre</p></div>
+      <div class="lc-card reveal"><h3 data-ar>السعودية للسيراميك</h3><h3 data-en>Saudi Ceramic</h3><p data-ar>مستودع أبها – CCTV</p><p data-en>Abha Warehouse – CCTV</p></div>
+      <div class="lc-card reveal"><h3 data-ar>مصنع الوطنية</h3><h3 data-en>Al-Watania Factory</h3><p dir="ltr">CCTV</p></div>
+      <div class="lc-card reveal"><h3 data-ar>الماجد للعود</h3><h3 data-en>Almajed for Oud</h3><p dir="ltr">CCTV &amp; Security Systems</p></div>
+    </div>
   </div>
 </section>
 
@@ -574,7 +589,7 @@ footer b{color:var(--gold-2)}
     var f=b.dataset.f;document.querySelectorAll('#pjgrid .pj').forEach(function(p){p.style.display=(f==='all'||p.dataset.s===f)?'':'none'})}});
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-  var names=["Saudi Aramco","Royal Commission for Riyadh City","Diriyah Gate","Qiddiya Investment Company","Nesma & Partners","Larsen & Toubro","Webuild (Salini)","AECOM","Jacobs","Royal Palace Authority","Shomoul Holding","Umm Al Qura Development","SEPCO III","Al Habdan","Adwar Al Aser"];
+  var names=["Saudi Aramco","Royal Commission for Riyadh City","Diriyah Gate","NEOM","Nesma & Partners","Larsen & Toubro","Webuild (Salini)","AECOM","Jacobs","Royal Palace Authority","Shomoul Holding","Umm Al Qura Development","SEPCO III","Al Habdan","Adwar Al Aser"];
   var mq=document.getElementById('mq');var h1=names.map(function(n){return '<span>'+n+'</span>'}).join('');mq.innerHTML=h1+h1;
   var pr=document.getElementById('prog');window.addEventListener('scroll',function(){var d=document.documentElement;pr.style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'});
   window.addEventListener('load',function(){document.getElementById('loader').classList.add('done')});setTimeout(function(){document.getElementById('loader').classList.add('done')},3500);
